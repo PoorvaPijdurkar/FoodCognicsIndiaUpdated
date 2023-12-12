@@ -1,0 +1,32 @@
+<!-- <p>gallary works!</p> -->
+<section id="portfolio" class="portfolio">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title" data-aos="flip-left">
+      <h3>Gallary</h3>
+    </div>
+
+    <div
+      class="row portfolio-container"
+      data-aos="fade-up"
+      data-aos-delay="200"
+    >
+      <div
+        *ngFor="let item of gallary"
+        class="col-lg-3 col-md-6 portfolio-item"
+      >
+        <div class="portfolio-wrap">
+          <img [src]="item.imageUrl" class="img-fluid" alt="image" />
+          <div class="portfolio-info">
+            <div class="portfolio-links">
+              <a
+                href=""
+                data-gallery="portfolioGallery"
+                class="portfolio-lightbox"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
